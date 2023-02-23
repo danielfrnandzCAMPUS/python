@@ -1,21 +1,21 @@
 
-""" 5. Enumere 5 tipos de datos en Python y suministre un valor de
-ejemplo de cada uno. """
 
+""" 6. En sus propias palabras, qué son las funciones
+preconstruidas y proporcione 2 ejemplos. """
 
+print("\nSon funciones que ya vienen en los paquetes del lenguaje de programación " 
+      "Python, solo debemos instanciarlas y tener en cuenta la finalidad de esa función preconstruida o predefinida")
 
-entero = 5
-long = 4569.6678615198764
-complejo = 4.5 + 3j
-booleano = True
-cadena = 'DanielFernandez'
+print("\t1.Función sort\n\nUna de las funciones mas usadas en Python es .sort(), su funcionalidad es "
+      "ordenar de manera ascendente o descendente una lista ya creada.")
 
+print("Creamos una lista carros \ncarros = ['Ferrari', 'Lamborghini', 'Bugatti', 'Volvo']")
 
-print("\n\tTipos de datos - Python")
-print(f"1. Numero entero : int = {entero}" )
-print(f"2. Numero decimal : long =  {long:.2f}" )
-print(f"3. Numero complejo : complex = {complejo}" )
-print(f"\t3.1. Numero complejo, tomando el real : complex = {complejo.real}" )
-print(f"\t3.2. Numero complejo, tomando el imaginario : complex = {complejo.imag}" )
-print(f"4. Booleano : bool = {booleano}" )
-print(f"5. Cadena : str = {cadena}")
+carros = ['Ferrari', 'Lamborghini', 'Bugatti', 'Volvo']
+carros.sort()
+
+print("Aplicarle sort de esta manera carros.sort(), nos ordenará la lista de la siguiente manera: \n", carros)
+
+print("\n\t2. Función min\n\nRetorna la unidad minima dentro de una lista," 
+      " usemos la lista ya creada de carros, siendo esta lista de cadenas "
+      " de caracteres tomará la unidad minima en ordena alfabetico", min(carros))
