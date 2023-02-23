@@ -1,9 +1,21 @@
-""" 4. Que son las expresiones regulares en Python? """
-print("Las expresiones resgulares son secuencias de caracteres que forma un patrón de búsqueda,"
-      " las cuales son formalizadas por medio de una sintaxis específica."
-      " Los patrones se interpretan como un conjunto de instrucciones,"
-      " que luego se ejecutan sobre un texto de entrada para producir"
-      " una versión modificada del texto original. ")
+
+""" 5. Enumere 5 tipos de datos en Python y suministre un valor de
+ejemplo de cada uno. """
 
 
-print("Info: https://relopezbriega.github.io/blog/2015/07/19/expresiones-regulares-con-python/")
+
+entero = 5
+long = 4569.6678615198764
+complejo = 4.5 + 3j
+booleano = True
+cadena = 'DanielFernandez'
+
+
+print("\n\tTipos de datos - Python")
+print(f"1. Numero entero : int = {entero}" )
+print(f"2. Numero decimal : long =  {long:.2f}" )
+print(f"3. Numero complejo : complex = {complejo}" )
+print(f"\t3.1. Numero complejo, tomando el real : complex = {complejo.real}" )
+print(f"\t3.2. Numero complejo, tomando el imaginario : complex = {complejo.imag}" )
+print(f"4. Booleano : bool = {booleano}" )
+print(f"5. Cadena : str = {cadena}")
