@@ -1,23 +1,20 @@
 
-""" 9. Construya un algoritmo en Python, que permita ingresar la
-información de un empleado e imprima el nombre, los
-apellidos y la antigüedad. Los datos que se deben solicitar
-son los siguientes:
-*Nombre * Teléfono *Año de ingreso a la empresa
-*Apellidos *Edad. """
 
-actual = 2023
-nombre = input("Ingresa el nombre del empleado: ")
-apellidos = input("Ingresa los apellidos del empleado: ")
-telefono = input("Ingresa el telefono del empleado: ")
-edad = int(input("Ingresa la edad del empleado: "))
-ingreso = int(input("Ingresa el año de ingreso del empleado a la empresa:"))
+""" 10. En su casa le solicitan que realice un algoritmo en Python,
+que permita calcular el valor a pagar por concepto de
+energía eléctrica. Los datos que se conocen son los
+siguientes:
+- Mes de consumo - Valor kw
+-Total kw consumido en el mes - estrato """
 
-antiguedad = actual - ingreso
 
-if (antiguedad<0 or edad <0):
-    print("Fecha de ingreso no puede ser mayor al año actual")
-else:
-    print(f"\tDatos del Empleado: \nNombre: {nombre} \nApellidos: {apellidos}")
-    print(f"Telefono: {telefono} \nEdad: {edad}")
-    print(f"La antigüedad del empleado es: {antiguedad} años")
+estratos = [1,233,291,496,583,700,700]
+mes = input("Ingresa el mes de consumo: ")
+valor_kw = int(input("Ingresa el valor por cada kw: "))
+estrato = int(input("Ingresa el estrato de la casa ( 1 a 6 ): "))
+consumo_kw = int(input("Ingresa los kw consumidos en el mes: "))
+
+total = consumo_kw * valor_kw *estratos[estrato]
+
+
+print(f"El total de la factura en el mes de {mes} fue de {total}, con consumo de {consumo_kw} con valor de {valor_kw} de cada Kw para el estrato {estrato}")
