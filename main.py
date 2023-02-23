@@ -1,11 +1,14 @@
-""" 1. Qué operadores utiliza Python en los siguientes casos:
-A. División Modular
-B. Exponenciación
-C. División que retorne entero. """
+""" 2. En la jerarquía de operadores, cuáles son los que más
+prioridad tienen cuando el intérprete de Python los evalúa? """
 
-num1 = 40
-num2 = 8
+print("\n\tJerarquía Python")
+print("1. Operaciones entre paréntesis ()")
+print("2. Potencia **")
+print("3. Multiplicación y División, módulo o residuo, División entera *, /, %, // ")
+print("4. Suma y resta + , -")
+print("5. Operadores relacionales <, <=, >, >=, !=, ==")
+print("6. Operador lógico AND And")
+print("7. Operador lógico OR Or")
 
-print(f"B. Exponenciación {num1}**{num2} = ", num1**num2)
-print(f"C. División que retorne entero. {num1}//{num2} = ", num1//num2)
-print(f"A. División Modular {num1}%{num2} = ", num1%num2)
+print("Ejemplo: (((4**5))*(10+9-(78))+(6//4))+(8/4) \nResultado")
+print((((4**5))*(10+9-(78))+(6//4))+(8/4))
